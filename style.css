@@ -1,0 +1,591 @@
+:root {
+  --ff-sans: 'Poppins', sans-serif;
+  --ff-serif: "IBM Plex Serif", serif;
+
+  /* small screen font-sizes */
+  --fs-200: 0.75rem;/*12px author/diff tag*/
+  --fs-300: 0.813rem;/*13px nav and small btn*/
+  --fs-400: 1rem;/*16px descript on cards*/
+  --fs-500: 1.063rem;/*17px paras but not in cards*/
+  --fs-600: 1.25rem;/*20px price in cards/large button*/
+  --fs-800: 2.125rem;/*34px - title in cards plus knitting comm sect title*/
+  --fs-900: 3.375rem;/*54px title mobile/become instr sect title*/
+  
+
+  
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --clr-neutral-100: #ffffff;/*bg*/
+  --clr-neutral-200: #f5f7fa;/*search bar, card bg*/
+  --clr-neutral-300: #737b8c;/*placeholder, light txt*/
+  --clr-neutral-400: #434956;/*p txt*/
+  --clr-neutral-900: #020203;/*most txt*/
+  
+
+  --clr-primary-500: #0469dc;/*blue elements*/
+  --clr-secondary-600: #5858da;/*purple*/
+  --clr-secondary-900: #05090f;/*black btn*/
+
+  --br-100: 1rem;
+  --br-200: 2rem;/*btn*/
+  --br-300: 2.5rem;/*img*/
+}
+
+@media (min-width: 40em) {
+  :root {
+    --fs-300: 1.25rem;/*13px big btn*/
+    --fs-900: 5rem;/*80px title big screens*/
+    
+  }
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--br-300);
+}
+
+body {
+  line-height: 1.75;
+  font-family: var(--ff-sans);
+  font-size: 
+  font-weight: 
+  
+}
+
+.bg-primary-100 {
+  background-color: var(--clr-neutral-100);/*main bg*/
+}
+
+.bg-secondary-200 {
+  background-color: var(--clr-neutral-200);/*grey bg*/
+}
+
+/* typography */
+
+h1,
+h2,
+h3,
+.section-subtitle,
+.text-serif {
+  font-family: 
+  font-weight: 
+}
+
+a {
+  font-weight: 
+  font-size: 
+  color: 
+}
+
+a:hover,
+a:focus {
+  color: 
+}
+
+.text-500 {
+  font-size: 
+}
+
+.page-title {
+  font-size: 
+}
+
+.page-intro {
+  font-size: 
+}
+
+.main-title {
+  
+}
+
+.section-title {
+  font-size: 
+  color: 
+}
+
+.section-subtitle {
+  font-size: 
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  
+  
+  font-family: var(--ff-sans);
+  text-decoration: none;
+   
+}
+
+.logo-mobile {
+  /*background-image: url(./assets/logo-small.svg);*/
+  max-width: 7.125rem;
+  max-height: 1.25rem;
+}
+
+
+.btn-small {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+}
+
+.btn-large {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-500);
+}
+
+.btn-black {
+ background-color: var(--clr-secondary-900);
+ color: var(--clr-neutral-100);
+}
+.btn-blue {
+  background-color: var(--clr-primary-500);
+  color: var(--clr-neutral-100);
+}
+.btn-purple {
+  background-color: var(--clr-secondary-600);
+  color: var(--clr-neutral-100);
+}
+
+
+
+.btn:hover,
+.btn:focus {
+  color:
+}
+
+/* general layout */
+
+section {
+  padding: 
+}
+
+@media (min-width: 40em) {
+  section {
+    padding: 
+  }
+}
+
+.container {
+  max-width: 
+  margin: 0 auto;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, );
+}
+
+.split {
+  display: flex;
+  flex-direction: 
+}
+
+.split > * + * {
+  margin: 4rem 0 0 0;
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * + * {
+    margin: 0 0 0 2.5rem;
+  }
+}
+
+.xl-space {
+  margin-top:
+}
+
+/* components */
+
+/*
+.primary-header {
+  border-radius: 
+  padding: 
+  background-color: 
+  background-size: 
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}  
+
+.primary-header .container {
+  margin-top: auto;
+  margin-bottom: 
+  width: 
+}
+
+
+
+.primary-header .container > * 
+  max-width: 12ch;/
+}
+
+.page-home .primary-header {
+  background-image: url(img/hero.jpg);
+  background-position: center center;
+}
+
+.page-blog .primary-header {
+  background-image: url(img/blog.jpg);
+  background-position: left center;
+}
+
+
+
+.primary-nav {
+  position: fixed;
+  bottom: 0.5em;
+  left: 0.5em;
+  right: 0.5em;
+  border-radius: var(--br);
+  background: var(--clr-neutral-900);
+  font-family: var(--ff-serif);
+}
+
+.primary-nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0.8em 0;
+}
+
+.primary-nav li {
+  line-height: 0;
+}
+
+.primary-nav a {
+  color: var(--clr-neutral-200);
+  text-decoration: none;
+}
+
+@media (min-width: 40em) {
+  .primary-nav {
+    position: static;
+    background: transparent;
+  }
+
+  .primary-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .primary-header__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .primary-nav ul {
+    padding: 0;
+  }
+
+  .primary-nav li {
+    margin-left: 2em;
+  }
+}
+
+
+
+.secondary-navigation {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.secondary-navigation > a:last-child {/
+  margin-left: auto;
+}
+
+.categories {
+  margin: 0;
+  display: flex;/*to get rid of ul extra space then go up to .sec-nav to add margin
+  gap: 1rem;
+}
+
+.categories button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: var(--fs-200);
+  background: transparent; 
+  border: 0;
+}
+
+
+
+.article-preview h3 {
+  font-size: var(--fs-500);
+}
+
+.article-preview img {
+  object-fit: cover;
+  height: 12.5rem;
+  width: 100%;
+}
+
+
+
+.article-preview {
+  position: relative;
+  z-index: 0;
+}
+
+.article-preview a {
+  display: block;
+  text-decoration: none;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-300);
+  
+}
+
+.article-preview a:hover,
+.article-preview a:focus {
+  color: inherit;
+}
+
+.article-preview a::before {
+  --offset: -1em;
+  content: "";
+  position: absolute;
+  top: var(--offset);
+  bottom: var(--offset);
+  left: var(--offset);
+  right: var(--offset);
+  z-index: var(--offset);
+  border-radius: var(--br);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
+  transition: opacity 350ms ease;/*ex how to transition the box-shadow here
+  opacity: 0;
+}
+
+.article-preview:hover a::before {
+  opacity: 1;
+}
+
+
+
+
+.article-preview .info {
+  display: flex;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-200);
+  color: var(--clr-neutral-400);
+}
+
+.article-preview .info > *:first-child {
+  margin-right: 2rem;
+}
+
+.call-to-action form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.call-to-action form > div {
+  flex-basis: 100%;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.call-to-action input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--clr-neutral-300);
+}
+
+.call-to-action input:focus {
+  border-color: var(--clr-primary-400);
+  border-width: 4px;
+}
+
+.call-to-action input::placeholder {
+  color: var(--clr-neutral-300);
+  opacity: 1;
+}
+
+.call-to-action label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+}
+
+.call-to-action button {
+  align-self: flex-start;
+}
+
+@media (min-width: 40em) {
+  .call-to-action form {
+    flex-direction: row;
+  }
+
+  .call-to-action button {
+    align-self: center;
+  }
+}
+
+.primary-footer__inner {
+  --border: 2px solid var(--clr-neutral-200);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  padding: 3em 0;
+  margin: 2em 0;
+}
+
+footer {
+  padding-bottom: 1em;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav > *:first-child {
+  margin-right: 4em;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2em;
+}
+
+.footer-social a {
+  font-weight: var(--fw-200);
+}
+
+/* homepage styles *
+
+.intro {
+  --flow-spacer: 2em;
+}
+
+
+
+.article-grid {
+  display: grid;
+  gap: 3em 2em;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.article-grid > * {/*just for mobile
+  grid-column: 1 / -1;
+}
+
+.article-grid > *:first-child {
+  display: grid;
+  gap: 1em 0;
+}
+
+@media (min-width: 30em) {
+  .article-grid > *:not(:first-child) {
+    grid-column: span 3;
+  }
+}
+
+
+@media (min-width: 40em) 
+  .article-grid > *:first-child {/* >* says that any direct child of
+    grid-column: 1 / -1;/*if we did > article:first-child f.ex then we limit
+  }/*it to only articles. We may in future want to put sth else in there like section
+
+  .article-grid > .article-preview:first-child {/*ie styling the first article
+    display: grid;/*need to be specific here in case we change into sth else in future f.ex a section
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content 1fr;/*the middle row text in middle
+    good for when need content that need to be stuck together in rows
+    gap: 1em 2em;/*for spacing issues remove flow-content in html
+  }
+
+  .article-grid > .article-preview:first-child img {/*selects the img
+    grid-row: span 3
+    height: 17.5rem;
+  }
+
+  .article-grid > .article-preview:first-child > h3 {/*selects the h3
+    margin-top: auto;/*moves it to the bottom of ce
+  }
+  .article-grid > .article-preview:first-child > .info {/*selects the .info
+    margin-bottom: auto;
+  }
+
+
+  .article-grid > *:nth-child(2),
+  .article-grid > *:nth-child(3) {/*each one spans 3 columns each
+    grid-column: span 3;
+  }
+  
+  .article-grid > *:nth-child(4),
+  .article-grid > *:nth-child(5),
+  .article-grid > *:nth-child(6) {
+    grid-column: span 2;
+  }
+  
+  .article-grid > *:nth-child(7),
+  .article-grid > *:nth-child(8) {
+    grid-column: span 3;
+  }
+}
+*/
+
+
+
+ 
+
+
