@@ -72,7 +72,7 @@
           <button class="btn btn-blue">Get Started</button>
         </div>
       </div><!--mobile only-->
-      <nav class="split bg-secondary-200">
+      <nav class="nav-mobile split bg-secondary-200">
         <ul class="main-nav text-li split">
           <li><a href="#">All Courses</a></li><!--need pseudo el on hover-->
           <li><a href="#">Beginner</a></li>
@@ -82,18 +82,18 @@
       </nav><!--mobile only-->
 
 
-      <nav class="tablet-nav"><!--middle screen only-->
-        <ul class="main-nav">
+      <nav class="tablet-nav xl-space"><!--middle screen only-->
+        <ul class="main-nav text-li split-nav">
           <li><a href="#">All Courses</a></li><!--need pseudo el on hover-->
           <li><a href="#">Beginner</a></li>
           <li><a href="#">Intermediate</a></li>
           <li><a href="#"></a>Expert</li>
           <li><a href="#"></a>Grandmother</li>
         </ul>
-        <a href="#">Subcribe</a>
+        <a href="#" class="sub-mobile text-li">Subcribe</a>
       </nav>
 
-      <div class="header-large"><!--Largest screen only-->
+      <div class="header-large-desktop"><!--Largest screen only-->
         <a href="#" aria-label="Knitting Pro home page"><img src="./assets/logo-large.svg" alt="" class="logo-large"></a>
         <div class="learn">
           <input placeholder="What do you want to learn" type="text" class="search">
@@ -218,12 +218,12 @@
         </div><!--end of  Mobile-->
       </div>
 
-      <div class="course-gallery-tablet">
+      <div class="course-gallery-tablet xl-space">
         <!--for tablet and use grid-->
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-purple btn-small">Beginner</button>
+            <div class="stars course-split">
               <p class="rated">4.4</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -232,18 +232,19 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name</h2>
           <p class="author">Author's name</p>
           <div class="pricing">
             <p class="price">$15.99</p>
+            <button class="btn btn-black btn-large">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-purple btn-small">Beginner</button>
+            <div class="stars course-split">
               <p class="rated">4.4</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -252,20 +253,23 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name can be long</h2>
           <p class="author">Author's name</p>
           <p class="course-text">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <div class="pricing">
-            <p class="sale">$23.99 SALE</p><!-- text-decoration: line-through-->
-            <p class="price">$15.99</p>
+            <div class="pricing-wrapper">
+              <p class="sale">$23.99 SALE</p>
+              <p class="price">$15.99</p>
+            </div>
+            <button class="btn btn-black btn-large">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Intermediate</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-blue btn-small">Intermediate</button>
+            <div class="stars course-split">
               <p class="rated">4.4</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -274,19 +278,19 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name can be long and some times even longer</h2>
           <p class="author">Author's name</p>
-          <p class="course-text">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <div class="pricing">
             <p class="price">$15.99</p>
+            <button class="btn btn-black btn-large">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-purple btn-small">Beginner</button>
+            <div class="stars course-split">
               <p class="rated">4.4</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -295,20 +299,23 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+         
           <h2 class="course-title">Course Name</h2>
           <p class="author">Author's name</p>
           <p class="course-text">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <div class="pricing">
-            <p class="sale">$23.99 SALE</p><!-- text-decoration: line-through-->
-            <p class="price">$15.99</p>
+            <div class="pricing-wrapper">
+              <p class="sale blue">$23.99 SALE</p>
+              <p class="price">$15.99</p>
+            </div>
+            <button class="btn btn-black btn-small">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-purple btn-small">Beginner</button>
+            <div class="stars course-split">
               <p class="rated">4.4</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -317,18 +324,19 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name be long and some times even longer</h2>
           <p class="author">Author's name</p>
           <div class="pricing">
             <p class="price">$15.99</p>
+            <button class="btn btn-black btn-small">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Intermediate</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-small btn-blue">Intermediate</button>
+            <div class="stars course-split">
               <p class="rated">4.4</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -337,23 +345,26 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name can be long and some times even longer</h2>
           <p class="author">Author's name</p>
           <p class="course-text">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <div class="pricing">
-            <p class="sale">$23.99 SALE</p><!-- text-decoration: line-through-->
-            <p class="price">$15.99</p>
+            <div clas="pricin-wrapper">
+              <p class="sale blue">$23.99 SALE</p>
+              <p class="price">$15.99</p>
+            </div>
+            <button class="btn btn-black btn-small">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div><!--end for tablet and use grid-->
       </div>
 
       <div class="course-gallery-desktop">
         <!--for desktop and use grid-->
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-small btn-purple">Beginner</button>
+            <div class="stars course-split">
               <p class="rated">4.4</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -362,18 +373,19 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name</h2>
           <p class="author">Author's name</p>
           <div class="pricing">
             <p class="price">$15.99</p>
+            <button class="btn btn-black btn-large">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-small btn-purple">Beginner</button>
+            <div class="stars course-split">
               <p class="rated">4.8</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -382,20 +394,24 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name can be long</h2>
           <p class="author">Author's name</p>
           <p class="course-text">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <div class="pricing">
-            <p class="sale">$23.99 SALE</p><!-- text-decoration: line-through-->
-            <p class="price">$15.99</p>
+            <div class="pricing-wrapper">
+              <p class="sale">$23.99 SALE</p>
+              <p class="price">$15.99</p>
+            </div>
+            <button class="btn btn-black btn-large">Enroll</button>
           </div>
-          <button>Enroll</button>
+          
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Intermediate</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-small btn-blue">Intermediate</button>
+            <div class="stars course-split">
               <p class="rated">4.5</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -404,39 +420,42 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name can be long and some times even longer</h2>
           <p class="author">Author's name</p>
           <p class="course-text">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <div class="pricing">
             <p class="price">$23.99</p>
+            <button class="btn btn-black btn-large" >Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-purple btn-small">Beginner</button>
+            <div class="stars course-split">
+              <p>4.4</p>
+              <img src="./assets/full-star.svg" alt="">
+              <img src="./assets/full-star.svg" alt="">
+              <img src="./assets/full-star.svg" alt="">
+              <img src="./assets/full-star.svg" alt="">
+              <img src="./assets/half-start.svg" alt="">
+            </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name can be long and some times even longer</h2>
           <p class="author">Author's name</p>
-          <div class="stars">
-            <p class="rated">4.4</p>
-            <img src="./assets/full-star.svg" alt="">
-            <img src="./assets/full-star.svg" alt="">
-            <img src="./assets/full-star.svg" alt="">
-            <img src="./assets/full-star.svg" alt="">
-            <img src="./assets/half-start.svg" alt="">
-          </div>
+          
           <div class="pricing">
             <p class="price">$15.99</p>
+            <button class="btn btn-black btn-large">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
 
-        <div class="course">
-          <div class="rating">
-            <button>Beginner</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-purple btn-small">Beginner</button>
+            <div class="stars course-split">
               <p class="rated">4.8</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -445,21 +464,24 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name</h2>
           <p class="author">Author's name</p>
           <p class="course-text">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
           <div class="pricing">
-            <p class="sale">$23.99 SALE</p><!-- text-decoration: line-through-->
-            <p class="price">$15.99</p>
+            <div class="pricing-wrapper">
+              <p class="sale blue">$23.99 SALE</p>
+              <p class="price">$15.99</p>
+            </div>
+            <button class="btn btn-black btn-large">Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
       
 
-        <div class="course">
-          <div class="rating">
-            <button>Intermediate</button>
-            <div class="stars">
+        <div class="course bg-secondary-200">
+          <div class="rating course-split">
+            <button class="btn btn-small btn-blue">Intermediate</button>
+            <div class="stars course-split">
               <p class="rated">4.5</p>
               <img src="./assets/full-star.svg" alt="">
               <img src="./assets/full-star.svg" alt="">
@@ -468,12 +490,13 @@
               <img src="./assets/half-start.svg" alt="">
             </div>
           </div>
+          <div class="empty"></div>
           <h2 class="course-title">Course Name can be long and some times even longer</h2>
           <p class="author">Author's name</p>
           <div class="pricing">
             <p class="price">$23.99</p>
+            <button class="btn btn-black btn-large" >Enroll</button>
           </div>
-          <button>Enroll</button>
         </div>
         <!--end for desktop and use grid-->
       </div>
