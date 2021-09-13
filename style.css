@@ -96,7 +96,7 @@ img {
 body {
   line-height: 1.75;
   font-family: var(--ff-sans);
-  font-size: 
+  
   
   padding: 0 2.5rem;
 }
@@ -127,10 +127,7 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  color: 
-}
+
 
 .text-li {
   font-size: var(--fs-300);
@@ -220,7 +217,7 @@ section {
 .container {
   max-width: 17rem;
   margin: 0 auto;
-  outline: 1px solid blue;
+  
 }
 
 
@@ -290,6 +287,11 @@ section {
 .logo-mobile {
   width: 3rem;
   max-height: 2rem;
+  
+}
+
+.hero-img {
+  box-shadow: 0px 4pro0px 80px rgb(161, 149, 149);
 }
 
 .search {
@@ -519,7 +521,7 @@ nav .sub-mobile {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1.5em 1.5em;
-    outline: 1px solid blue;
+    
   
   }
   .course {
@@ -583,7 +585,7 @@ nav .sub-mobile {
   .course-gallery-desktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1.5em 1.5em;
   }
 
@@ -599,8 +601,18 @@ nav .sub-mobile {
 
 /* Get started */
 
+.get-started .yarn-img {
+  box-shadow: 0px 10px 50px rgb(161, 149, 149);
+}
+
 .get-started button {
   display: block;
+}
+
+.get-started .container {
+  flex-direction: column;
+  padding-top: 1.5em;
+ 
 }
 
 .get-started .more {
@@ -609,6 +621,31 @@ nav .sub-mobile {
 }
 
 @media (min-width: 64em) {
+  .get-started .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  } 
+
+  .get-started .get-started-content {
+    order: -1;
+    flex-basis: 50%;
+  }
+
+  .get-started .yarn-img {
+    width: 20rem;
+    max-height: 20rem;
+  }
+
+  .get-started button {
+    display: inline-block;
+    
+  }
+
+  .get-started .more {
+    margin-left: 1.5em;
+  }
   
   
 }
@@ -635,6 +672,7 @@ nav .sub-mobile {
 
 .become-instructor .profile-img {
   margin: 0 auto;
+  box-shadow: 0px 10px 50px rgb(161, 149, 149);
 }
 
 .become-instructor button {
@@ -648,11 +686,44 @@ nav .sub-mobile {
   display: inline-block;
   content:'';
   position: absolute;
-  border-bottom: 1px solid #737b8c;
+  border-bottom: 3px solid #f1f3f7;
   width: 100%;
   bottom: 0px;
   left: 0;
   z-index: 1;
+  
+}
+
+@media (min-width: 64em) {
+  .become-instructor .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  
+  }
+
+  .become-instructor button {
+    align-self: end;
+    display: block;
+    
+    
+  }
+
+  .become-instructor .instructor-content {
+    flex-basis: 60%;
+    
+  }
+
+  .become-instructor .profile-img {
+    max-height: 20rem;
+    width: 20rem;
+    flex-basis: 40%;
+  }
+  
+}
+
+@media (min-width: 80em) {
   
 }
 
@@ -683,6 +754,39 @@ nav .sub-mobile {
     display: flex;
     gap: 2em;
   }
+
+  .footer-split {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+
+  }
+
+  .footer  .footer-nav {
+    display: flex;
+    
+    gap: 1em;
+    margin-top: 0;
+   
+  }
+
+  .footer .footer-nav li  {
+    margin-top: 0;
+  }
+
+  .footer .footer-content {
+   margin-bottom: 3em; 
+  }
+
+  .footer-content img {
+   align-self: flex-start;
+  }
+
+  .footer .social {
+    margin-bottom: 0;
+    align-self: flex-start;
+  }
   
 }
 
@@ -692,84 +796,6 @@ nav .sub-mobile {
 
 
 
-
-
-/*
-
-
-/* homepage styles *
-
-.intro {
-  --flow-spacer: 2em;
-}
-
-
-
-.article-grid {
-  display: grid;
-  gap: 3em 2em;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.article-grid > * {/*just for mobile
-  grid-column: 1 / -1;
-}
-
-.article-grid > *:first-child {
-  display: grid;
-  gap: 1em 0;
-}
-
-@media (min-width: 30em) {
-  .article-grid > *:not(:first-child) {
-    grid-column: span 3;
-  }
-}
-
-
-@media (min-width: 40em) 
-  .article-grid > *:first-child {/* >* says that any direct child of
-    grid-column: 1 / -1;/*if we did > article:first-child f.ex then we limit
-  }/*it to only articles. We may in future want to put sth else in there like section
-
-  .article-grid > .article-preview:first-child {/*ie styling the first article
-    display: grid;/*need to be specific here in case we change into sth else in future f.ex a section
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr min-content 1fr;/*the middle row text in middle
-    good for when need content that need to be stuck together in rows
-    gap: 1em 2em;/*for spacing issues remove flow-content in html
-  }
-
-  .article-grid > .article-preview:first-child img {/*selects the img
-    grid-row: span 3
-    height: 17.5rem;
-  }
-
-  .article-grid > .article-preview:first-child > h3 {/*selects the h3
-    margin-top: auto;/*moves it to the bottom of ce
-  }
-  .article-grid > .article-preview:first-child > .info {/*selects the .info
-    margin-bottom: auto;
-  }
-
-
-  .article-grid > *:nth-child(2),
-  .article-grid > *:nth-child(3) {/*each one spans 3 columns each
-    grid-column: span 3;
-  }
-  
-  .article-grid > *:nth-child(4),
-  .article-grid > *:nth-child(5),
-  .article-grid > *:nth-child(6) {
-    grid-column: span 2;
-  }
-  
-  .article-grid > *:nth-child(7),
-  .article-grid > *:nth-child(8) {
-    grid-column: span 3;
-  }
-}
-*/
 
 
 
