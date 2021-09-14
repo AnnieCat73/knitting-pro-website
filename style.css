@@ -278,11 +278,10 @@ section {
 
 /* components */
 
-/*.hero-image {
-  
-  box-shadow: 0 4px 4px 0 rgba(67, 97, 157, 0.09);
-  
-}NOT works*/
+/* primary-header */
+
+
+
 
 .logo-mobile {
   width: 3rem;
@@ -344,6 +343,12 @@ nav .sub-mobile {
   .split {
     align-items: center;
     
+  }
+
+  .split-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   
@@ -438,6 +443,25 @@ nav .sub-mobile {
   .main-nav >:last-child {
     display: block;
   }
+
+  .desktop-nav {
+    display: flex;
+    padding: 1em 0;
+  }
+
+  .main-nav {
+    max-width: 35%;
+  }
+
+  .main-nav > li  {
+    flex-basis: 5%;
+  }
+
+  .desktop-nav a {
+    
+  }
+
+  
 
 }
 
