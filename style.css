@@ -104,6 +104,7 @@ body {
 
 .bg-secondary-200 {
   background-color: var(--clr-neutral-200);/*grey bg*/
+  border-radius: 4px;
 }
 
 /* typography */
@@ -247,6 +248,9 @@ section {
   }
 }*/
 
+.xl-space-small {
+  margin-bottom: 1.5rem;
+}
 .xl-space {
   margin-top: 3.5rem;
 }
@@ -317,13 +321,33 @@ nav .sub-mobile {
 
 
 @media (min-width: 64em) {
-  .main-nav-tablet {
-    display: block;
+  .main-nav {
+
   }
 
   .main-nav >:first-child,
   .main-nav >:last-child {
     display: block;
+  }
+
+  .main-nav > :nth-child(2)::after {
+    display: none;
+    
+  }
+
+  .main-nav >:first-child{
+    position: relative;
+  }
+  
+  .main-nav > :first-child::after {
+    display: inline-block;
+    content:'';
+    position: absolute;
+    border-bottom: 3px solid black;
+    width: 100%;
+    top: 25px;
+    left: 0;
+    z-index: 1;
   }
 
 
