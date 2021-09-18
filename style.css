@@ -230,27 +230,10 @@ section {
   gap: 1em;
 }
 
-/*.split > * + * {
-  margin: 4rem 0 0 0;
-}*/
-
-/*.split > * {
-  flex-basis: 100%;
-}
-
-/*@media (min-width: 40em) {
-  .split {
-    flex-direction: 
-  }
-
-  .split > * + * {
-    margin: 0 0 0 2.5rem;
-  }
-}*/
-
 .xl-space-small {
   margin-bottom: 1.5rem;
 }
+
 .xl-space {
   margin-top: 3.5rem;
 }
@@ -264,6 +247,10 @@ section {
 /* primary-header */
 
 .container nav:nth-child(2) {
+  display: none;
+}
+
+.container nav:nth-child(5) {
   display: none;
 }
 
@@ -286,7 +273,7 @@ nav .sub-mobile {
 }
 
 .hero-img {
-  box-shadow: 0px 4pro0px 80px rgb(161, 149, 149);
+  box-shadow: 0px 40px 80px rgb(161, 149, 149);
 }
 
 .search {
@@ -321,8 +308,8 @@ nav .sub-mobile {
 
 
 @media (min-width: 64em) {
-  .main-nav {
-
+  .container nav:nth-child(5) {
+    display: none;
   }
 
   .main-nav >:first-child,
@@ -349,7 +336,6 @@ nav .sub-mobile {
     left: 0;
     z-index: 1;
   }
-
 
   .header-large {
     display: flex;
@@ -399,34 +385,7 @@ nav .sub-mobile {
   nav .sub-mobile {
     display: block;
   }
-  /*
-  .tablet-nav > :first-child{
-    position: relative;
-  }
-  .tablet-nav > :first-child::after {
-    display: inline-block;
-    content:'';
-    position: absolute;
-    border-bottom: 3px solid black;
-    width: 100%;
-    top: 30px;
-    left: 0;
-    z-index: 1;
-  }
-
-  .tablet-nav > :nth-child(2)::after {
-    display: none;
-  }
-
-  .tablet-nav > :first-child,
-  .tablet-nav >:last-child {
-    display: block;
-  }
-
-  .tablet-nav > li a {
-    padding-bottom: 1.5em;
-  }*/
-
+  
   .text-li{
     font-size: var(--fs-200);
     line-height: 1;
@@ -442,6 +401,13 @@ nav .sub-mobile {
 
 
 @media (min-width: 80em) {
+  .container nav:nth-child(3) {
+    display: none;
+  }
+  .container nav:nth-child(5) {
+    display: none;
+  }
+
   .primary-header .header-mobile {
     display: none;
   }
@@ -457,6 +423,10 @@ nav .sub-mobile {
   .main-nav > :first-child,
   .main-nav >:last-child {
     display: block;
+  }
+
+  .main-nav > :first-child::after {
+    top: 40px;
   }
 
   .desktop-nav {
@@ -673,11 +643,6 @@ nav .sub-mobile {
   }
 }
 
-@media (min-width: 80em) {
-  
-}
-
-
 /* Become instructor */
 
 .become-instructor {
@@ -696,8 +661,9 @@ nav .sub-mobile {
 }
 
 .become-instructor .profile-img {
-  margin: 0 auto;
+  margin-left: 0 auto;
   box-shadow: 0px 10px 50px rgb(161, 149, 149);
+  object-fit: cover;
 }
 
 .become-instructor button {
@@ -740,12 +706,6 @@ nav .sub-mobile {
     flex-basis: 40%;
   }
 }
-
-
-@media (min-width: 80em) {
-  
-}
-
 
 /* Footer */
 
@@ -815,9 +775,6 @@ nav .sub-mobile {
 }
 
 
-@media (min-width: 80em) {
-  
-}
 
 
 
