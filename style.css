@@ -140,14 +140,14 @@ a {
   font-weight: var(--fw-300);
   font-size: var(--fs-900);
   line-height: 1.2em;
-  letter-spacing: -2%;
+  letter-spacing: 2%;
 }
 
 .section-title {
   font-family: var(--ff-sans);
   font-weight: var(--fw-300);
   font-size: var(--fs-800);
-  letter-spacing: -2%;
+  letter-spacing: 2%;
   line-height: 1.1;
 }
 
@@ -198,16 +198,11 @@ section {
 }
 
 .container {
-  max-width: 17rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
 
-@media (min-width: 64em) {
-  .container {
-    max-width: 54rem;
-  }
-}
 
 @media (min-width: 80em) {
   .container {
@@ -451,19 +446,18 @@ nav .sub-mobile {
 /* Courses */
 
 .course-gallery-mobile {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  
 }
 
 .course {
   border-radius: 24px;
-  height: 27.5rem;
-  width: 17rem;
   padding: 1.5rem;
   margin: 1.5em auto;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 3em;
 }
 
 .empty {
@@ -512,7 +506,9 @@ nav .sub-mobile {
   font-size: var(--fs-600);
 }
 
-@media (min-width: 64em) {
+@media (min-width: 35em) {
+
+  
   .course-gallery-mobile,
   .course-gallery-desktop {
     display: none;
@@ -527,11 +523,6 @@ nav .sub-mobile {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1.5em 1.5em;
-  }
-
-  .course {
-    width: 26rem;
-    height: 30rem;
   }
 
   .courses .tablet-nav {
@@ -575,11 +566,6 @@ nav .sub-mobile {
   .course-gallery-mobile,
   .course-gallery-tablet {
     display: none;
-  }
-
-  .course {
-    height: 30rem;
-    width: 22rem;
   }
 
   .course-gallery-desktop {
@@ -661,7 +647,7 @@ nav .sub-mobile {
 }
 
 .become-instructor .profile-img {
-  margin-left: 0 auto;
+  margin-left: auto;
   box-shadow: 0px 10px 50px rgb(161, 149, 149);
   object-fit: cover;
 }
@@ -683,12 +669,12 @@ nav .sub-mobile {
 }
 
 
-@media (min-width: 64em) {
+@media (min-width: 45em) {
   .become-instructor .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .become-instructor button {
@@ -728,8 +714,16 @@ nav .sub-mobile {
   gap: 1em;
 }
 
+@media (min-width: 30em) and (max-width: 45em) {
+  .footer-content {
+    
+    display: grid;
+    place-items: center;
+  }
+}
 
-@media (min-width: 64em) {
+
+@media (min-width: 45em) {
   .header-mobile,
   .nav-mobile,
   .mobile-nav,
