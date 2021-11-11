@@ -72,9 +72,10 @@ This project was one of the challenged I had to complete from Kevin Powell’s C
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Annie Indreiten](https://www.your-site.com)
 - Github – https://github.com/AnnieCat73
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- LinkedIn - https://www.linkedin.com/in/annie-indreiten777/
+
 
 
 
