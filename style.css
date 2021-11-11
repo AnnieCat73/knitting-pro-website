@@ -11,8 +11,6 @@
   --fs-800: 2.125rem;/*34px - title in cards plus knitting comm sect title*/
   --fs-900: 3.375rem;/*54px title mobile/become instr sect title*/
   
-
-  
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
@@ -24,7 +22,6 @@
   --clr-neutral-400: #434956;/*p txt*/
   --clr-neutral-900: #020203;/*most txt*/
   
-
   --clr-primary-500: #0469dc;/*blue elements*/
   --clr-secondary-600: #5858da;/*purple*/
   --clr-secondary-700: #0469DC;
@@ -138,16 +135,15 @@ a {
 
 .main-title {
   font-weight: var(--fw-300);
-  font-size: var(--fs-900);
+  font-size: clamp(3.375rem, 5vw + 1rem, 5rem);
   line-height: 1.2em;
-  letter-spacing: 2%;
 }
 
 .section-title {
   font-family: var(--ff-sans);
   font-weight: var(--fw-300);
   font-size: var(--fs-800);
-  letter-spacing: 2%;
+  letter-spacing: 0.5px;
   line-height: 1.1;
 }
 
@@ -276,7 +272,6 @@ nav .sub-mobile {
   max-height: 1.5rem;
 }
 
-
 nav .sub-mobile {
   display: none;
 }
@@ -301,8 +296,14 @@ nav .sub-mobile {
   z-index: 1;
 }
 
+@media (min-width: 35em) and (max-width: 64em) {
+  .primary-header .header-mobile {
+    display: flex;
+  }
 
-@media (min-width: 64em) {
+}
+
+@media (min-width: 64em)  {
   .container nav:nth-child(5) {
     display: none;
   }
@@ -392,8 +393,7 @@ nav .sub-mobile {
     gap: 2em;
     justify-content: space-between;
   }
-}
-
+} 
 
 @media (min-width: 80em) {
   .container nav:nth-child(3) {
@@ -601,6 +601,12 @@ nav .sub-mobile {
   display: inline-block;
 }
 
+@media (min-width: 35em) {
+  .get-started button {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+}
 
 @media (min-width: 64em) {
   .get-started .container {
@@ -668,7 +674,6 @@ nav .sub-mobile {
   z-index: 1;
 }
 
-
 @media (min-width: 45em) {
   .become-instructor .container {
     flex-direction: row;
@@ -714,16 +719,7 @@ nav .sub-mobile {
   gap: 1em;
 }
 
-@media (min-width: 30em) and (max-width: 45em) {
-  .footer-content {
-    
-    display: grid;
-    place-items: center;
-  }
-}
-
-
-@media (min-width: 45em) {
+@media (min-width: 40em) {
   .header-mobile,
   .nav-mobile,
   .mobile-nav,
