@@ -25,7 +25,7 @@ While building the site one of the aims was to be aware of stacking and formatti
 ![](./assets/knitting-pro.png)
 ### Links
 
-- Live Site URL: [Add live site URL here](https://knitting-pro-website.pages.dev)
+- Live Site URL: https://knitting-pro-website.pages.dev
 
 ## My process
 
