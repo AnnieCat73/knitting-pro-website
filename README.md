@@ -29,9 +29,9 @@ While building the site one of the aims was to be aware of stacking and formatti
 
 ## My process
 
--Built from a design in Figma
-- Most sections on the site using Flexbox as main layout for responsiveness
-- The courses section was a good case for using CSS Grid
+- Built from a design in Figma.
+- Most sections on the site using Flexbox as main layout for responsiveness.
+- The courses section was a good case for using CSS Grid.
 - Used utility classes for spacing, colors and buttons.
 - I first coded the HTML from the desktop design version.
 - For CSS styling and responsiveness the Mobile-first approach was used.
@@ -59,7 +59,7 @@ I will continue to improve with my layout skills. My aim is to get more comforta
 
 ### Useful resources
 
-This project was one of the challenged I had to complete from Kevin Powell’s CSS Demystified course.
+This project was one of the challenges I had to complete from Kevin Powell’s CSS Demystified course.
 
 ## Author
 

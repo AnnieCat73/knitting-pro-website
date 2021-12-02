@@ -3,39 +3,39 @@
   --ff-serif: "IBM Plex Serif", serif;
 
   /* small screen font-sizes */
-  --fs-200: 0.75rem;/*12px author/diff tag*/
-  --fs-300: 0.813rem;/*13px nav and small btn*/
-  --fs-400: 1rem;/*16px descript on cards*/
-  --fs-500: 1.063rem;/*17px paras but not in cards*/
-  --fs-600: 1.25rem;/*20px price in cards/large button*/
-  --fs-800: 2.125rem;/*34px - title in cards plus knitting comm sect title*/
-  --fs-900: 3.375rem;/*54px title mobile/become instr sect title*/
+  --fs-200: 0.75rem;
+  --fs-300: 0.813rem;
+  --fs-400: 1rem;
+  --fs-500: 1.063rem;
+  --fs-600: 1.25rem;
+  --fs-800: 2.125rem;
+  --fs-900: 3.375rem;
   
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
   --fw-700: 700;
 
-  --clr-neutral-100: #ffffff;/*bg*/
-  --clr-neutral-200: #f5f7fa;/*search bar, card bg*/
-  --clr-neutral-300: #737b8c;/*placeholder, light txt*/
-  --clr-neutral-400: #434956;/*p txt*/
-  --clr-neutral-900: #020203;/*most txt*/
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: #f5f7fa;
+  --clr-neutral-300: #737b8c;
+  --clr-neutral-400: #434956;
+  --clr-neutral-900: #020203;
   
-  --clr-primary-500: #0469dc;/*blue elements*/
-  --clr-secondary-600: #5858da;/*purple*/
+  --clr-primary-500: #0469dc;
+  --clr-secondary-600: #5858da;
   --clr-secondary-700: #0469DC;
-  --clr-secondary-900: #05090f;/*black btn*/
+  --clr-secondary-900: #05090f;
 
   --br-100: 1rem;
-  --br-200: 2rem;/*btn*/
-  --br-300: 2.5rem;/*img*/
+  --br-200: 2rem;
+  --br-300: 2.5rem;
 }
 
 @media (min-width: 40em) {
   :root {
-    --fs-300: 1.25rem;/*13px big btn*/
-    --fs-900: 5rem;/*80px title big screens*/
+    --fs-300: 1.25rem;
+    --fs-900: 5rem;
   }
 }
 
@@ -96,15 +96,15 @@ body {
 }
 
 .bg-primary-100 {
-  background-color: var(--clr-neutral-100);/*main bg*/
+  background-color: var(--clr-neutral-100);
 }
 
 .bg-secondary-200 {
-  background-color: var(--clr-neutral-200);/*grey bg*/
+  background-color: var(--clr-neutral-200);
   border-radius: 4px;
 }
 
-/* typography */
+/* typography/utility classes */
 
 h1,
 h2,
@@ -233,7 +233,7 @@ section {
   margin-bottom: 3.5rem;
 }
 
-/* COMPONENTS */
+/* SECTIONS */
 
 /* primary-header */
 
